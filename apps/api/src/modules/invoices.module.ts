@@ -1,0 +1,13 @@
+import { Module } from "@nestjs/common";
+import { InvoicesController } from "../controllers/invoices.controller";
+import { InvoicesService } from "../services/invoices.service";
+
+@Module({
+    controllers: [
+        InvoicesController
+    ],
+    providers:[
+        InvoicesService
+    ]
+})
+export class InvoicesModule {}
