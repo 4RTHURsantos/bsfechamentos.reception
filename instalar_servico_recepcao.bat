@@ -82,13 +82,13 @@ echo CONFIGURACAO DO ARQUIVO .ENV
 echo ================================
 echo.
 
-set /p API_PORT=Digite a PORTA da API (ex: 3001):
+set /p PORT=Digite a PORTA da API (ex: 3001):
 set /p ROOT_FOLDER=Digite o caminho da pasta raiz (ex: C:\XML_RECEPCAO):
 
 echo Salvando .env...
 
 (
-echo API_PORT=%API_PORT%
+echo PORT=%PORT%
 echo ROOT_FOLDER=%ROOT_FOLDER%
 ) > ".env"
 
